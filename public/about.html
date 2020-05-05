@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoroTrack</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Covid-19 track app. Understand the progression of the virus by visualization.">
+  <link rel="icon" href="favicon-32x32.png" type="image/ico" sizes="32x32"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<button class="w3-blue w3-hover-light-gray"onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/home" class="w3-bar-item w3-button w3-blue w3-hover-black w3-hover-text-white"><b>COROTRACK</b></a>
+    <div class="w3-right w3-hide-small">
+      <a href="/home" class="w3-bar-item w3-button w3-hover-blue w3-hover-text-white">Home</a>
+      <a href="/nigeria" class="w3-bar-item w3-button w3-hover-blue w3-hover-text-white">Nigeria</a>
+      <a href="/about" class="w3-bar-item w3-button w3-hover-blue w3-hover-text-white">About</a>
+    </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-blue w3-hover-black" onclick="myFunction()">&#9776;</a> 
+      <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <a href="/home" class="w3-bar-item w3-button w3-hover-blue w3-hover-text-white">Home</a>
+        <a href="/nigeria" class="w3-bar-item w3-button w3-hover-blue w3-hover-text-white">Nigeria</a>
+        <a href="/about" class="w3-bar-item w3-button w3-hover-blue w3-hover-text-white">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+
+<div class="w3-content w3-padding w3-black w3-text-white" style="max-width:1564px">
+  <div class="w3-container " id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-text-blue">COROTRACK</h3>
+  </div>
+  <div class="w3-row-padding">
+    <p>Corotrack is a Coronavirus(COVID-19) disease tracking website. It shows live update about the virus and also help people to easily visualize its progression in the world. So as to get better insight and understanding of the virus.</p>
+    <p> <h2>What is a coronavirus?</h2>Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</p>
+    <p> <h2>What is COVID-19?</h2>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</p>
+    <p> <h2>What are the symptoms of COVID-19?</h2>The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Some patients may have aches and pains, nasal congestion, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but only have very mild symptoms. Most people (about 80%) recover from the disease without needing hospital treatment. Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, or cancer , are at higher risk of developing serious illness. However anyone can catch COVID-19 and become seriously ill. Even people with very mild symptoms of COVID-19 can transmit the virus. People of all ages who experience fever, cough and difficulty breathing should seek medical attention.</p>
+    <p> <h2>What should I do if I have COVID-19 symptoms and when should I seek medical care?
+    </h2>If you have minor symptoms, such as a slight cough or a mild fever, there is generally no need to seek medical care. Stay at home, self-isolate and monitor your symptoms. Follow national guidance on self-isolation.
+  
+    <p>However, if you live in an area with malaria or dengue fever it is important that you do not ignore symptoms of fever.  Seek medical help.  When you attend the health facility wear a mask if possible, keep at least 1 metre distance from other people and do not touch surfaces with your hands. If it is a child who is sick help the child stick to this advice.</p>
+    
+    Seek immediate medical care if you have difficulty breathing or pain/pressure in the chest. If possible, call your health care provider in advance, so he/she can direct you to the right health facility.
+    </p>
+    <p> <h2>How can we protect others and ourselves if we don't know who is infected?
+    </h2>Practicing hand and respiratory hygiene is important at ALL times and is the best way to protect others and yourself.
+    <p>When possible maintain at least a 1 metre (3 feet) distance between yourself and others. This is especially important if you are standing by someone who is coughing or sneezing. Since some infected persons may not yet be exhibiting symptoms or their symptoms may be mild, maintaining a physical distance with everyone is a good idea if you are in an area where COVID-19 is circulating. </p>
+    </p>
+    <p>Source: <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms" style="text-decoration: none;">WHO</a></p>
+  </div>
+
+  
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-text-blue">About Me</h3>
+  </div>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col  w3-margin-bottom">
+      <img src="img/owner.jpg" alt="olaxtech" class="img">
+      <h3>Mustapha Moshood Olawale</h3>
+      <p class="w3-opacity">Fullstack Web Developer | Python Programmer | Geospatial Software Developer and Analyst (In view)</p>
+      <p>I am a tech ethusiast who loves building and designing projects. I am proficient in web development using different tools and languages to building a scalable, maintainable, fast and efficient products. I am also passionate about applying new technologies to build geospatial softwares and also help in the advancement of technology in all other fields to the benefit of humanity.  </p>
+      <p style="width:120px; height: 20px; text-decoration: none;"><button class="w3-button w3-text-black w3-blue w3-hover-white w3-block"><a href="https://www.linkedin.com/in/mustapha-moshood-090512196/" title="Olaxtech" target="_blank" style="text-decoration: none;" >Contact</a></button> </p>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-16">
+  <p>COROTRACK &copy; 2020</p>
+  <p>Web Design & Development by <a href="https://www.linkedin.com/in/mustapha-moshood-090512196/" title="Olaxtech" target="_blank" class="w3-hover-text-black">Olaxtech</a></p>
+</footer>
+
+</body>
+<script>
+  //menu button on small screen
+  function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</html>
