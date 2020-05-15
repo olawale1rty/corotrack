@@ -13,14 +13,15 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-    let list = response.response.sort((a, b) => (a.country> b.country) ? 1 : -1)
 
+    let list = response.response.sort((a, b) => (a.country> b.country) ? 1 : -1)
+    list_slice = list.slice(215)
     const date = new Date();
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
    
-	list.forEach((input)=>{
-
+	list_slice.forEach((input)=>{
+      
     	var row = document.createElement('tr');
     	row.classList.add('row');
 
