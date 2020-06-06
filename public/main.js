@@ -27,13 +27,14 @@ $.ajax(settings).done(function (response) {
 
     	var country = document.createElement('td');
     	country.classList.add('country');
-    	country.innerHTML = Object.values(input)[0]
+    	country.innerHTML = Object.values(input)[1]
 
-    	let cases = Object.values(input)[1]
+    	let cases = Object.values(input)[3]
 
     	var newCases = document.createElement('td');
     	newCases.classList.add('newCases');
     	newCases.innerHTML = Object.values(cases)[0]
+      
 
     	var activeCases = document.createElement('td');
     	activeCases.classList.add('activeCases');
@@ -49,9 +50,9 @@ $.ajax(settings).done(function (response) {
 
     	var totalCases = document.createElement('td');
     	totalCases.classList.add('totalCases');
-    	totalCases.innerHTML = Object.values(cases)[4]
+    	totalCases.innerHTML = Object.values(cases)[5]
 
-    	let death = Object.values(input)[2]
+    	let death = Object.values(input)[4]
 
     	var newDeaths = document.createElement('td');
     	newDeaths.classList.add('newDeaths');
@@ -59,18 +60,18 @@ $.ajax(settings).done(function (response) {
 
     	var totalDeaths = document.createElement('td');
     	totalDeaths.classList.add('totalDeaths');
-    	totalDeaths.innerHTML = Object.values(death)[1]
+    	totalDeaths.innerHTML = Object.values(death)[2]
 
-    	let test2 = Object.values(input)[3]
+    	let test2 = Object.values(input)[5]
 
     	var test = document.createElement('td');
     	test.classList.add('test');
-    	test.innerHTML = Object.values(test2)[0]
+    	test.innerHTML = Object.values(test2)[1]
 
     	var day = document.createElement('td');
     	day.classList.add('day');
         //date format
-        let part =Object.values(input)[4].split('-');
+        let part =Object.values(input)[6].split('-');
         let  newDate = new Date(Number(part[0]),Number(part[1])-1, Number(part[2]));
         let month = months[newDate.getMonth()]
         let dat = newDate.getDate()
@@ -117,7 +118,7 @@ $.ajax(settings).done(function (response) {
           return d.slice(0, 3).join('.') + ' ' + d.slice(3).join(':');
         }
 
-        d_time = Date.parse(Object.values(input)[5])
+        d_time = Date.parse(Object.values(input)[7])
         time.innerHTML = formatDate(new Date(d_time))
 
 
@@ -137,7 +138,7 @@ $.ajax(settings).done(function (response) {
     	let table = document.querySelector(".my_table_body");
     	table.appendChild(row);
     	
-        Maps(Object.values(input)[0], Object.values(cases)[0], Object.values(cases)[1], Object.values(cases)[2], Object.values(cases)[3], Object.values(cases)[4], Object.values(death)[0], Object.values(death)[1], Object.values(test2)[0], Object.values(input)[4], Object.values(input)[5])
+        Maps(Object.values(input)[1], Object.values(cases)[0], Object.values(cases)[1], Object.values(cases)[2], Object.values(cases)[3], Object.values(cases)[5], Object.values(death)[0], Object.values(death)[2], Object.values(test2)[1], Object.values(input)[6], Object.values(input)[7])
 	})
 
 });

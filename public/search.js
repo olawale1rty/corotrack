@@ -40,24 +40,24 @@ search.Search = (Query) => {
 
     list.forEach((input)=>{
       
-      let countries = Object.values(input)[0];
+      let countries = Object.values(input)[1];
 
-      let cases = Object.values(input)[1]; 
+      let cases = Object.values(input)[3]; 
       let newC = Object.values(cases)[0];
       let activeC = Object.values(cases)[1];
       let criticalC = Object.values(cases)[2];
       let recordedC = Object.values(cases)[3];
-      let totalC = Object.values(cases)[4];
+      let totalC = Object.values(cases)[5];
 
-      let death = Object.values(input)[2]; 
+      let death = Object.values(input)[4]; 
       let newD = Object.values(death)[0]; 
-      let totalD = Object.values(death)[1];
+      let totalD = Object.values(death)[2];
 
-      let test2 = Object.values(input)[3]; 
-      let test = Object.values(test2)[0];
+      let test2 = Object.values(input)[5]; 
+      let test = Object.values(test2)[1];
 
-      let date = Object.values(input)[4];
-      let time = Object.values(input)[5];
+      let date = Object.values(input)[6];
+      let time = Object.values(input)[7];
 
      
           
